@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int num,c=1;
+    printf ("Enter number");
+    scanf ("%d",&num);
+    while (num!=0)
+    {
+      c=c*(num);
+      num=num-1;
+          //printf ("c=%d\n", c);
+    }
+    printf ("c=%d\n", c);
+    return 0;
+}
