@@ -1,0 +1,26 @@
+#include <stdio.h>
+int Fact(int num);
+int main ()
+{
+    int num,b;
+    printf ("Enter number");
+    scanf ("%d",&num);
+    b=Fact(num);
+    printf ("b=%d\n",b);
+    return 0;
+}
+int Fact(int num)
+{
+    int c=1,d;
+
+    if (num!=0)
+    {
+    c=num*Fact(num-1);
+    }
+    else
+    {
+       // d=1;
+        return 1;
+    }
+    return c;
+}
